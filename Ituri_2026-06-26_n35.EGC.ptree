@@ -209,7 +209,7 @@ BEGIN TREES;
   ],
   "nodeLabelAnnotation": "__cal_date_hpd__",
   "nodeLabelPosition": "above-left",
-  "nodeLabelFontSize": "9",
+  "nodeLabelFontSize": "8",
   "nodeLabelColor": "#e06961",
   "nodeLabelSpacing": "4",
   "nodeLabelColourBy": "user_colour",
