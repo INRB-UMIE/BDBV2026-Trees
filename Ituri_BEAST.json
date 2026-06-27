@@ -1,0 +1,81 @@
+{
+  "ui": {
+    "palette": false,
+    "toolbar": false,
+    "statusBar": false,
+    "import": false,
+    "export": false,
+    "rtt": false,
+    "dataTable": false,
+    "themeToggle": false,
+    "tbFileOps": false,
+    "tbAnnotations": false,
+    "tbReroot": false,
+    "tbColour": false,
+    "tbFilter": false,
+    "tbPanels": false,
+    "openTree": false,
+    "backgroundColor": "#FFFFFA",
+    "borderWidth": "1.5",
+    "borderColor": "#F1F0E7",
+    "borderRadius": "10",
+    "paddingLeft": "4",
+    "paddingRight": "4",
+    "paddingTop": "4",
+    "paddingBottom": "4",
+    "theme": "light"
+  },
+  "settings": {
+    "canvasBgColor": "#FFFFFA",
+    "introAnimation": "none",
+    "spacingLeft": "0",
+    "spacingRight": "0",
+    "spacingTop": "0",
+    "spacingBottom": "0",
+    "axisSpacingTop": "0",
+    "filters":[
+      {
+        "id":"filter-support",
+        "name":"support",
+        "root":{
+          "logic":"AND",
+          "items":[
+            {
+              "field":"posterior",
+              "operator":">=",
+              "value":"0.5"
+            }
+          ]
+        }
+      },
+      {
+        "id":"filter-root",
+        "name":"root",
+        "root":{
+          "logic":"AND",
+          "items":[
+            {
+              "field":"__tips_below__",
+              "operator":">=",
+              "value":"15"
+            }
+          ]
+        }
+      },
+      {
+        "id":"filter-root-13",
+        "name":"root",
+        "root":{
+          "logic":"AND",
+          "items":[
+            {
+              "field":"__tips_below__",
+              "operator":">=",
+              "value":"13"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
