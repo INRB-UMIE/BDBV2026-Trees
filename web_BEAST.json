@@ -16,23 +16,11 @@
     "tbPanels": false,
     "openTree": false,
     "backgroundColor": "#FFFFFA",
-    "borderWidth": "1.5",
-    "borderColor": "#F1F0E7",
-    "borderRadius": "10",
-    "paddingLeft": "4",
-    "paddingRight": "4",
-    "paddingTop": "4",
-    "paddingBottom": "4",
     "theme": "light"
   },
   "settings": {
     "canvasBgColor": "#FFFFFA",
     "introAnimation": "none",
-    "spacingLeft": "0",
-    "spacingRight": "0",
-    "spacingTop": "0",
-    "spacingBottom": "0",
-    "axisSpacingTop": "0",
     "filters":[
       {
         "id":"filter-support",
