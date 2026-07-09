@@ -160,7 +160,7 @@ BEGIN TREES;
   "tipLabelSpacing": "3",
   "tipLabelsExtra": [
     "location",
-    "off",
+    "date",
     "off"
   ],
   "tipLabelsExtraLayouts": [
