@@ -55,9 +55,9 @@
           "logic":"AND",
           "items":[
             {
-              "field":"__tips_below__",
-              "operator":">=",
-              "value":"35"
+              "field":"__divergence__",
+              "operator":"<",
+              "value":"0.00001"
             }
           ]
         }
