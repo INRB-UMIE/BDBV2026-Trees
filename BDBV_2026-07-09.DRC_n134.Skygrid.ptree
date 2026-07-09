@@ -257,7 +257,6 @@ BEGIN TREES;
   "cladeHighlightStrokeOpacity": "0.7",
   "cladeHighlightColour": "#ffaa00",
   "cladeHighlights": [],
-  "filters": "[{\"id\":\"filter-1783460752380-gq62i\",\"name\":\"root\",\"root\":{\"logic\":\"AND\",\"items\":[{\"field\":\"__divergence__\",\"operator\":\"<\",\"value\":\"0.00001\"}]}}]",
   "nodeBarsFilter": "filter-root",
   "nodeLabelsFilter": "filter-root",
   "branchLabelsFilter": null,
