@@ -1,0 +1,37 @@
+name: Claude Code
+
+# Runs whenever someone with write access mentions @claude
+# in an issue or pull request comment.
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+
+jobs:
+  claude:
+    if: contains(github.event.comment.body, '@claude')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20          # stops runaway jobs
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write            # also needed later for WIF
+      actions: read
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+      - uses: anthropics/claude-code-action@v1
+        with:
+          # TEST SETUP: personal API key stored as a GitHub secret.
+          # Remove this line when switching to WIF (see notes below).
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: "--max-turns 10"   # caps cost per run
+
+# ---- Later, for WIF: replace the anthropic_api_key line with ----
+#          anthropic_federation_rule_id: fdrl_...
+#          anthropic_organization_id: <org id from Anthropic>
+#          anthropic_service_account_id: svac_...   # optional
+#          anthropic_workspace_id: wrkspc_...       # optional
